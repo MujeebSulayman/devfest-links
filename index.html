@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Mujeeb Sulayman Links</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@500;700&family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+/* One narrow column of tappable link rows, grouped by purpose; Google's four colours mark each group. */
+:root {
+  --bg: #f6f7f9;
+  --surface: #ffffff;
+  --ink: #202124;
+  --muted: #5f6368;
+  --line: #e2e5ea;
+  --blue: #1a73e8;
+  --red: #d93025;
+  --yellow: #f9ab00;
+  --green: #188038;
+  --display: "Outfit", "Segoe UI", Arial, sans-serif;
+  --body: "DM Sans", "Segoe UI", Arial, sans-serif;
+  color-scheme: light;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --bg: #14171c; --surface: #1d2128; --ink: #eceef1; --muted: #a6adb8; --line: #2e343d;
+    --blue: #8ab4f8; --red: #f28b82; --yellow: #fdd663; --green: #81c995;
+    color-scheme: dark;
+  }
+}
+:root[data-theme="dark"] {
+  --bg: #14171c; --surface: #1d2128; --ink: #eceef1; --muted: #a6adb8; --line: #2e343d;
+  --blue: #8ab4f8; --red: #f28b82; --yellow: #fdd663; --green: #81c995;
+  color-scheme: dark;
+}
+* { box-sizing: border-box; }
+html, body { margin: 0; }
+body {
+  background: var(--bg);
+  color: var(--ink);
+  font-family: var(--body);
+  font-size: 16px;
+  line-height: 1.5;
+}
+main {
+  max-width: 520px;
+  margin: 0 auto;
+  padding: 40px 20px 56px;
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
+}
+.dots { display: flex; gap: 8px; }
+.dots span { width: 12px; height: 12px; border-radius: 50%; }
+header { display: flex; flex-direction: column; gap: 10px; }
+.avatar {
+  width: 72px; height: 72px; border-radius: 50%;
+  background: var(--blue); color: #ffffff;
+  display: grid; place-items: center;
+  font-family: var(--display); font-weight: 700; font-size: 28px;
+}
+h1 {
+  font-family: var(--display); font-weight: 700; font-size: 30px; line-height: 1.15;
+  margin: 4px 0 0; text-wrap: balance;
+}
+.roles { color: var(--muted); margin: 0; }
+.talk {
+  background: var(--surface); border: 1px solid var(--line); border-left: 6px solid var(--yellow);
+  border-radius: 14px; padding: 16px 18px; display: flex; flex-direction: column; gap: 4px;
+}
+.talk .label { font-size: 13px; font-weight: 700; letter-spacing: .06em; text-transform: uppercase; color: var(--muted); }
+.talk .title { font-family: var(--display); font-weight: 700; font-size: 19px; line-height: 1.25; text-wrap: balance; }
+.talk .when { color: var(--muted); font-size: 15px; }
+section { display: flex; flex-direction: column; gap: 10px; }
+h2 {
+  font-size: 13px; font-weight: 700; letter-spacing: .08em; text-transform: uppercase;
+  color: var(--muted); margin: 0; display: flex; align-items: center; gap: 8px;
+}
+h2::before { content: ""; width: 10px; height: 10px; border-radius: 50%; background: var(--c); }
+.links { display: flex; flex-direction: column; gap: 10px; list-style: none; margin: 0; padding: 0; }
+.links a {
+  display: flex; align-items: center; justify-content: space-between; gap: 12px;
+  background: var(--surface); border: 1px solid var(--line); border-radius: 14px;
+  padding: 14px 18px; color: var(--ink); text-decoration: none;
+  transition: border-color .15s, transform .15s;
+}
+.links a:hover { border-color: var(--c); transform: translateY(-1px); }
+.links a:focus-visible { outline: 3px solid var(--c); outline-offset: 2px; }
+.links .name { font-weight: 700; display: block; }
+.links .hint { color: var(--muted); font-size: 14px; display: block; }
+.links .arrow { color: var(--c); font-weight: 700; font-size: 20px; flex: none; }
+.links .text { min-width: 0; overflow-wrap: anywhere; }
+footer { color: var(--muted); font-size: 14px; text-align: center; }
+@media (prefers-reduced-motion: reduce) { .links a { transition: none; } .links a:hover { transform: none; } }
+</style>
+</head>
+<body>
+<main>
+  <div class="dots" aria-hidden="true">
+    <span style="background:var(--blue)"></span><span style="background:var(--red)"></span><span style="background:var(--yellow)"></span><span style="background:var(--green)"></span>
+  </div>
+
+  <header>
+    <div class="avatar" aria-hidden="true">MS</div>
+    <h1>Mujeeb Sulayman</h1>
+    <p class="roles">Technical Lead, Nerve Esports · AI Educator, Oxtech Academy</p>
+  </header>
+
+  <div class="talk">
+    <span class="label">Today’s talk</span>
+    <span class="title">Building the Next Generation of Web3 Applications with AI Agents</span>
+    <span class="when">DevFest Ibadan 2026 · Saturday, 21 November</span>
+  </div>
+
+  <section style="--c:var(--blue)">
+    <h2>Connect with me</h2>
+    <ul class="links">
+      <li><a href="https://x.com/TheHemjay"><span class="text"><span class="name">X (Twitter)</span><span class="hint">@TheHemjay · tag me when you build your agent</span></span><span class="arrow" aria-hidden="true">→</span></a></li>
+      <li><a href="https://github.com/MujeebSulayman"><span class="text"><span class="name">GitHub</span><span class="hint">github.com/MujeebSulayman · code from the talk</span></span><span class="arrow" aria-hidden="true">→</span></a></li>    </ul>
+  </section>
+
+  <section style="--c:var(--red)">
+    <h2>The talk</h2>
+    <ul class="links">
+      <li><a href="https://gamma.app/docs/detcjyzyuct1skp"><span class="text"><span class="name">Slides</span><span class="hint">All 16 slides from today</span></span><span class="arrow" aria-hidden="true">→</span></a></li>
+    </ul>
+  </section>
+
+  <section style="--c:var(--yellow)">
+    <h2>Start here: your first week</h2>
+    <ul class="links">
+      <li><a href="https://x402.org"><span class="text"><span class="name">x402</span><span class="hint">The toll gate for the web: docs and quickstart</span></span><span class="arrow" aria-hidden="true">→</span></a></li>
+      <li><a href="https://eips.ethereum.org/EIPS/eip-8004"><span class="text"><span class="name">ERC-8004: Trustless Agents</span><span class="hint">The digital ID card standard for agents</span></span><span class="arrow" aria-hidden="true">→</span></a></li>
+      <li><a href="https://docs.cdp.coinbase.com/x402/support/x402-foundation"><span class="text"><span class="name">x402 Foundation</span><span class="hint">Who runs x402, and its members</span></span><span class="arrow" aria-hidden="true">→</span></a></li>
+    </ul>
+  </section>
+
+  <section style="--c:var(--green)">
+    <h2>Read more</h2>
+    <ul class="links">
+      <li><a href="https://www.trmlabs.com/trm-tech-blog/whos-actually-paying-measuring-ai-agent-payments-onchain"><span class="text"><span class="name">Who’s actually paying?</span><span class="hint">TRM Labs on real AI agent payments (Sept 2026)</span></span><span class="arrow" aria-hidden="true">→</span></a></li>
+    </ul>
+  </section>
+
+  <footer>Build one agent that pays for one thing this month.</footer>
+</main>
+</body>
+</html>
